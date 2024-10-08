@@ -1,0 +1,15 @@
+import Layout from '../components/Layout';
+import ProductGrid from '../components/ProductGrid';
+import { getProducts } from '../api/products';
+
+const HomePage = () => {
+  const products = getProducts();
+
+  return (
+    <Layout>
+      <ProductGrid products={products} />
+    </Layout>
+  );
+};
+
+export default HomePage;

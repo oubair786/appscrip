@@ -1,0 +1,13 @@
+import Header from './Header';
+import ProductGrid from './ProductGrid';
+
+const Layout = ({ children }) => {
+  return (
+    <div>
+      <Header />
+      <main>{children}</main>
+    </div>
+  );
+};
+
+export default Layout;
